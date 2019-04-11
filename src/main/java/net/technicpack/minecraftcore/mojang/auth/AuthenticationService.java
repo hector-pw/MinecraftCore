@@ -38,7 +38,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class AuthenticationService implements IGameAuthService<MojangUser> {
-	private static final String AUTH_SERVER = "https://mchub.hectorsky.net/authserver/";
+	private static final String AUTH_SERVER = "https://craftnetwork.eu.org/authserver/";
 
 	public AuthResponse requestRefresh(MojangUser mojangUser) throws AuthenticationNetworkFailureException {
 		RefreshRequest refreshRequest = new RefreshRequest(mojangUser.getAccessToken(), mojangUser.getClientToken());
